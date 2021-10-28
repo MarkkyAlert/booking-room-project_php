@@ -21,12 +21,13 @@ function isEmailExist($email) {
     include('connection.php');
     $select_stmt = $db->prepare("SELECT COUNT(email) AS count_email FROM users WHERE email = :email");
     $select_stmt->bindParam(':email', $email);
+    $select_stmt->execute();
     $row = $select_stmt->fetch(PDO::FETCH_ASSOC);
     if ($row['count_email'] != 0) {
-        return true;
+        return $row['count_email'];
     }
     else {
-        return false;
+        return $row['count_email'];
     }
 }
 
@@ -42,7 +43,7 @@ function createUser($firstname, $lastname, $email, $phone, $password, $role) {
     $insert_stmt->bindParam('lastname', $lastname);
     $insert_stmt->bindParam(':email', $email);
     $insert_stmt->bindParam(':phone', $phone);
-    $insert_stmt->bindParam(':password', $password);
+    $insert_stmt->bindParam(':password', encryptPassword($password));
     $insert_stmt->bindParam(':role', $role);
     $insert_stmt->execute();
 
@@ -51,6 +52,36 @@ function createUser($firstname, $lastname, $email, $phone, $password, $role) {
     }
     else {
         return true;
+    }
+}
+
+
+// Login function
+function readUserPassword($email) {
+    include('connection.php');
+    $select_stmt = $db->prepare("SELECT password FROM users WHERE email = :email");
+    $select_stmt->bindParam(':email', $email);
+    $select_stmt->execute();
+    $row = $select_stmt->fetch(PDO::FETCH_ASSOC);
+    return $row['password'];
+}
+
+function readRoleUser($email) {
+    include('connection.php');
+    $select_stmt = $db->prepare("SELECT role FROM users WHERE email = :email");
+    $select_stmt->bindParam(':email', $email);
+    $select_stmt->execute();
+    $row = $select_stmt->fetch(PDO::FETCH_ASSOC);
+    return $row['role'];
+}
+
+function verifyPassword($password, $email) {
+    
+    if (password_verify($password, readUserPassword($email))) {
+        return true;
+    }
+    else {
+        return false;
     }
 }
 

@@ -99,7 +99,7 @@ body {
     width: 25%;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1200px) {
     .register-card-custom {
         width: 100%;
     }
@@ -137,6 +137,18 @@ body {
   
     .link-responsive {
         font-size: 12px;
+    }
+}
+
+.alert-custom {
+    width: 25%;
+    text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+  
+    .alert-custom {
+        width: 100%;
+        text-align: center;
     }
 }
 

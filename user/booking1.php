@@ -1,3 +1,12 @@
+<?php
+    include('../config/functions.php');
+    session_start();
+    
+    if (!isset($_SESSION['is_logged_in'])) {
+        redirect("../login.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
