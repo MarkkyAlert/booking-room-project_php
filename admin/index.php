@@ -291,8 +291,6 @@
                                                 <td>X</td>
                                                 <td>X</td>
                                                 <td>
-                                                    <a href="" class="btn btn-success">อนุมัติ</a>
-                                                    <a href="" class="btn btn-danger">ยกเลิก</a>
                                                     <a href="" class="btn btn-info">รายละเอียด</a>
                                                 </td>
                                             </tr>
@@ -307,8 +305,6 @@
                                                 <td>C</td>
                                                 <td>C</td>
                                                 <td>
-                                                    <a href="" class="btn btn-success">อนุมัติ</a>
-                                                    <a href="" class="btn btn-danger">ยกเลิก</a>
                                                     <a href="" class="btn btn-info">รายละเอียด</a>
                                                 </td>
                                             </tr>
@@ -323,8 +319,6 @@
                                                 <td>A</td>
                                                 <td>A</td>
                                                 <td>
-                                                    <a href="" class="btn btn-success">อนุมัติ</a>
-                                                    <a href="" class="btn btn-danger">ยกเลิก</a>
                                                     <a href="" class="btn btn-info">รายละเอียด</a>
                                                 </td>
                                             </tr>

@@ -267,27 +267,14 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <form>
-                                        <div class="mb-3 date-custom">
-                                            <label for="exampleInputEmail1" class="form-label">วันที่จอง</label>
-                                            <input type="date" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="mb-3 date-custom" >
-                                            <label for="exampleInputPassword1" class="form-label">วันที่สิ้นสุด</label>
-                                            <input type="date" class="form-control w-100" id="exampleInputPassword1">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary mb-3 mb-md-0">ค้นหา</button>
-                                    </form>
+                                    <a href="" class="btn btn-info mb-4">เพิ่มหมวดหมู่ห้องพัก</a>
+                                    <a href="" class="btn btn-info mb-4">Import CSV</a>
                                     <table id="example2" class="table table-bordered table-hover">
                                         <thead>
                                             <tr>
-                                                <th>เลขที่การจอง</th>
-                                                <th>ชื่อ-นามสกุล</th>
-                                                <th>รายการ</th>
-                                                <th>หมายเหตุ</th>
-                                                <th>สถานะ</th>
-                                                <th>วันที่จอง</th>
-                                                <th>วันที่สิ้นสุด</th>
+                                                <th>รูป</th>
+                                                <th>เลขหมวดหมู่ห้องพัก</th>
+                                                <th>หมวดหมู่ห้องพัก</th>
                                                 <th>ตัวเลือก</th>
                                             </tr>
                                         </thead>
@@ -297,41 +284,29 @@
                                                 <td>Internet
                                                     Explorer 4.0
                                                 </td>
-                                                <td>Win 95+</td>
-                                                <td> 4</td>
-                                                <td>X</td>
-                                                <td>X</td>
-                                                <td>X</td>
+                                                <td>Trident</td>
                                                 <td>
-                                                    <a href="" class="btn btn-info">รายละเอียด</a>
+                                                    <a href="" class="btn btn-danger">ลบ</a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Trident</td>
+                                            <td>Trident</td>
                                                 <td>Internet
-                                                    Explorer 5.0
+                                                    Explorer 4.0
                                                 </td>
-                                                <td>Win 95+</td>
-                                                <td>5</td>
-                                                <td>C</td>
-                                                <td>C</td>
-                                                <td>C</td>
+                                                <td>Trident</td>
                                                 <td>
-                                                    <a href="" class="btn btn-info">รายละเอียด</a>
+                                                    <a href="" class="btn btn-danger">ลบ</a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Trident</td>
+                                            <td>Trident</td>
                                                 <td>Internet
-                                                    Explorer 5.5
+                                                    Explorer 4.0
                                                 </td>
-                                                <td>Win 95+</td>
-                                                <td>5.5</td>
-                                                <td>A</td>
-                                                <td>A</td>
-                                                <td>A</td>
+                                                <td>Trident</td>
                                                 <td>
-                                                    <a href="" class="btn btn-info">รายละเอียด</a>
+                                                    <a href="" class="btn btn-danger">ลบ</a>
                                                 </td>
                                             </tr>
                                         </tbody>

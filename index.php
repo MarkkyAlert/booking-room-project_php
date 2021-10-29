@@ -41,7 +41,7 @@
                 <?php if (isset($_SESSION['is_logged_in'])) : ?>
                 <li class="nav-item dropdown">
                     <a class="link-custom dropdown-toggle text-decoration-none" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <?php echo $_SESSION['email_login']; ?>
+                        <?php if (isset($_SESSION['email_login'])) {echo $_SESSION['email_login'];} ?>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="logout.php">ออกจากระบบ</a></li> 
@@ -301,7 +301,6 @@
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </body>
 
 </html>
